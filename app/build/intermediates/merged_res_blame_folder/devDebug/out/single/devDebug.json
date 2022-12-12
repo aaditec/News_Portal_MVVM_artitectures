@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\layout_fragment_details.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\layout\\fragment_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xxhdpi_app_icon_adaptive_fore.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-hdpi_baseline_search_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-hdpi\\baseline_search_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-xhdpi_baseline_close_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-xhdpi\\baseline_close_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xhdpi_app_icon_adaptive_fore.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-mdpi_app_icon_adaptive_back.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-mdpi\\app_icon_adaptive_back.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xxxhdpi_app_icon_adaptive_fore.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-mdpi_baseline_search_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-mdpi\\baseline_search_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\layout_fragment_feed.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\layout\\fragment_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-hdpi_favorite.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-hdpi\\favorite.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\layout_item_news.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\layout\\item_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\layout_item_error_message.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\layout\\item_error_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xxhdpi_app_icon_adaptive_back.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon_adaptive_back.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-anydpi-v26\\app_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-xxhdpi_baseline_search_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-xxhdpi\\baseline_search_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-hdpi_app_icon_adaptive_fore.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-hdpi\\app_icon_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-mdpi_app_icon.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-mdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-xxxhdpi_baseline_close_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-xxxhdpi\\baseline_close_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xxhdpi_app_icon.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable_img.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\menu_toolbar_menu.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\menu\\toolbar_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-mdpi_app_icon_adaptive_fore.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-mdpi\\app_icon_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-hdpi_explore.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-hdpi\\explore.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xhdpi_app_icon_adaptive_back.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon_adaptive_back.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-hdpi_baseline_close_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-hdpi\\baseline_close_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xxxhdpi_app_icon_adaptive_back.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon_adaptive_back.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-xxxhdpi_baseline_search_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-xxxhdpi\\baseline_search_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-xhdpi_baseline_search_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-xhdpi\\baseline_search_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-hdpi_placeholder_image.jpeg.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-hdpi\\placeholder_image.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-hdpi_app_icon.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-hdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xxxhdpi_app_icon.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-mdpi_baseline_close_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-mdpi\\baseline_close_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-xhdpi_app_icon.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\mipmap-hdpi_app_icon_adaptive_back.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\mipmap-hdpi\\app_icon_adaptive_back.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\drawable-xxhdpi_baseline_close_black_20.png.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\drawable-xxhdpi\\baseline_close_black_20.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\build\\intermediates\\merged_res\\devDebug\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM\\app\\src\\main\\res\\layout\\fragment_favorites.xml"
+    }
+]

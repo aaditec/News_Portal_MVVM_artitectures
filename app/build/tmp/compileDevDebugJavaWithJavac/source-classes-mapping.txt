@@ -1,0 +1,164 @@
+com/nitv/newsapp/di/NetworkModule_ProvideApiHelperFactory.java
+ com.nitv.newsapp.di.NetworkModule_ProvideApiHelperFactory
+com/nitv/newsapp/DataBindingTriggerClass.java
+ com.nitv.newsapp.DataBindingTriggerClass
+com/nitv/newsapp/ui/details/DetailsFragmentArgs.java
+ com.nitv.newsapp.ui.details.DetailsFragmentArgs
+ com.nitv.newsapp.ui.details.DetailsFragmentArgs$1
+ com.nitv.newsapp.ui.details.DetailsFragmentArgs$Builder
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/nitv/newsapp/di/RepositoryModule_ProvideINewsRepositoryFactory.java
+ com.nitv.newsapp.di.RepositoryModule_ProvideINewsRepositoryFactory
+com/nitv/newsapp/databinding/ItemNewsBinding.java
+ com.nitv.newsapp.databinding.ItemNewsBinding
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/nitv/newsapp/ui/main/Hilt_MainActivity.java
+ com.nitv.newsapp.ui.main.Hilt_MainActivity
+ com.nitv.newsapp.ui.main.Hilt_MainActivity$1
+com/nitv/newsapp/DataBinderMapperImpl.java
+ com.nitv.newsapp.DataBinderMapperImpl
+ com.nitv.newsapp.DataBinderMapperImpl$InnerBrLookup
+ com.nitv.newsapp.DataBinderMapperImpl$InnerLayoutIdLookup
+com/nitv/newsapp/ui/main/MainViewModel_HiltModules_KeyModule_ProvideFactory.java
+ com.nitv.newsapp.ui.main.MainViewModel_HiltModules_KeyModule_ProvideFactory
+ com.nitv.newsapp.ui.main.MainViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder
+com/nitv/newsapp/di/RepositoryModule_ProvideRepositoryFactory.java
+ com.nitv.newsapp.di.RepositoryModule_ProvideRepositoryFactory
+com/nitv/newsapp/NewsApp_GeneratedInjector.java
+ com.nitv.newsapp.NewsApp_GeneratedInjector
+com/nitv/newsapp/data/local/NewsDatabase_Impl.java
+ com.nitv.newsapp.data.local.NewsDatabase_Impl
+ com.nitv.newsapp.data.local.NewsDatabase_Impl$1
+hilt_aggregated_deps/_com_nitv_newsapp_NewsApp_GeneratedInjector.java
+ hilt_aggregated_deps._com_nitv_newsapp_NewsApp_GeneratedInjector
+com/nitv/newsapp/databinding/FragmentDetailsBinding.java
+ com.nitv.newsapp.databinding.FragmentDetailsBinding
+com/nitv/newsapp/BuildConfig.java
+ com.nitv.newsapp.BuildConfig
+com/nitv/newsapp/ui/main/MainActivity_GeneratedInjector.java
+ com.nitv.newsapp.ui.main.MainActivity_GeneratedInjector
+com/nitv/newsapp/NewsApp_ComponentTreeDeps.java
+ com.nitv.newsapp.NewsApp_ComponentTreeDeps
+com/nitv/newsapp/utils/NetworkHelper_Factory.java
+ com.nitv.newsapp.utils.NetworkHelper_Factory
+hilt_aggregated_deps/_com_nitv_newsapp_di_NetworkModule.java
+ hilt_aggregated_deps._com_nitv_newsapp_di_NetworkModule
+com/nitv/newsapp/databinding/ItemErrorMessageBinding.java
+ com.nitv.newsapp.databinding.ItemErrorMessageBinding
+com/nitv/newsapp/di/RepositoryModule_ProvideNewsDaoFactory.java
+ com.nitv.newsapp.di.RepositoryModule_ProvideNewsDaoFactory
+com/nitv/newsapp/di/AppModule_ProvideApplicationFactory.java
+ com.nitv.newsapp.di.AppModule_ProvideApplicationFactory
+com/nitv/newsapp/Hilt_NewsApp.java
+ com.nitv.newsapp.Hilt_NewsApp
+ com.nitv.newsapp.Hilt_NewsApp$1
+com/nitv/newsapp/databinding/FragmentFeedBinding.java
+ com.nitv.newsapp.databinding.FragmentFeedBinding
+dagger/hilt/internal/aggregatedroot/codegen/_com_nitv_newsapp_NewsApp.java
+ dagger.hilt.internal.aggregatedroot.codegen._com_nitv_newsapp_NewsApp
+hilt_aggregated_deps/_com_nitv_newsapp_di_AppModule.java
+ hilt_aggregated_deps._com_nitv_newsapp_di_AppModule
+hilt_aggregated_deps/_com_nitv_newsapp_ui_main_MainViewModel_HiltModules_KeyModule.java
+ hilt_aggregated_deps._com_nitv_newsapp_ui_main_MainViewModel_HiltModules_KeyModule
+com/nitv/newsapp/DaggerNewsApp_HiltComponents_SingletonC.java
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$1
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ActivityCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ActivityCImpl
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ActivityRetainedCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ActivityRetainedCImpl
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ActivityRetainedCImpl$SwitchingProvider
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$Builder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$FragmentCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$FragmentCImpl
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ServiceCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ServiceCImpl
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$SwitchingProvider
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewCImpl
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewModelCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewModelCImpl
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewModelCImpl$SwitchingProvider
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewWithFragmentCBuilder
+ com.nitv.newsapp.DaggerNewsApp_HiltComponents_SingletonC$ViewWithFragmentCImpl
+com/nitv/newsapp/di/CoroutinesDispatcherProvider_Factory.java
+ com.nitv.newsapp.di.CoroutinesDispatcherProvider_Factory
+ com.nitv.newsapp.di.CoroutinesDispatcherProvider_Factory$InstanceHolder
+com/nitv/newsapp/BR.java
+ com.nitv.newsapp.BR
+com/nitv/newsapp/network/repository/NewsRepository_Factory.java
+ com.nitv.newsapp.network.repository.NewsRepository_Factory
+com/nitv/newsapp/di/NetworkModule_ProvideNewsApiFactory.java
+ com.nitv.newsapp.di.NetworkModule_ProvideNewsApiFactory
+hilt_aggregated_deps/_com_nitv_newsapp_ui_main_MainViewModel_HiltModules_BindsModule.java
+ hilt_aggregated_deps._com_nitv_newsapp_ui_main_MainViewModel_HiltModules_BindsModule
+com/nitv/newsapp/ui/favorite/FavoriteFragmentDirections.java
+ com.nitv.newsapp.ui.favorite.FavoriteFragmentDirections
+ com.nitv.newsapp.ui.favorite.FavoriteFragmentDirections$1
+ com.nitv.newsapp.ui.favorite.FavoriteFragmentDirections$ActionFavoriteFragmentToDetailsFragment
+com/nitv/newsapp/ui/main/MainViewModel_HiltModules.java
+ com.nitv.newsapp.ui.main.MainViewModel_HiltModules
+ com.nitv.newsapp.ui.main.MainViewModel_HiltModules$BindsModule
+ com.nitv.newsapp.ui.main.MainViewModel_HiltModules$KeyModule
+com/nitv/newsapp/di/NetworkModule_ProvideRetrofitFactory.java
+ com.nitv.newsapp.di.NetworkModule_ProvideRetrofitFactory
+com/nitv/newsapp/di/NetworkModule_ProvideOkHttpClientFactory.java
+ com.nitv.newsapp.di.NetworkModule_ProvideOkHttpClientFactory
+ com.nitv.newsapp.di.NetworkModule_ProvideOkHttpClientFactory$InstanceHolder
+com/nitv/newsapp/ui/feed/FeedFragmentDirections.java
+ com.nitv.newsapp.ui.feed.FeedFragmentDirections
+ com.nitv.newsapp.ui.feed.FeedFragmentDirections$1
+ com.nitv.newsapp.ui.feed.FeedFragmentDirections$ActionFeedFragmentToDetailsFragment
+com/nitv/newsapp/di/RepositoryModule_ProvideDatabaseFactory.java
+ com.nitv.newsapp.di.RepositoryModule_ProvideDatabaseFactory
+dagger/hilt/internal/processedrootsentinel/codegen/_com_nitv_newsapp_NewsApp.java
+ dagger.hilt.internal.processedrootsentinel.codegen._com_nitv_newsapp_NewsApp
+com/nitv/newsapp/databinding/FragmentFavoritesBinding.java
+ com.nitv.newsapp.databinding.FragmentFavoritesBinding
+hilt_aggregated_deps/_com_nitv_newsapp_ui_main_MainActivity_GeneratedInjector.java
+ hilt_aggregated_deps._com_nitv_newsapp_ui_main_MainActivity_GeneratedInjector
+com/nitv/newsapp/NewsApp_HiltComponents.java
+ com.nitv.newsapp.NewsApp_HiltComponents
+ com.nitv.newsapp.NewsApp_HiltComponents$ActivityC
+ com.nitv.newsapp.NewsApp_HiltComponents$ActivityC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$ActivityCBuilderModule
+ com.nitv.newsapp.NewsApp_HiltComponents$ActivityRetainedC
+ com.nitv.newsapp.NewsApp_HiltComponents$ActivityRetainedC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$ActivityRetainedCBuilderModule
+ com.nitv.newsapp.NewsApp_HiltComponents$FragmentC
+ com.nitv.newsapp.NewsApp_HiltComponents$FragmentC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$FragmentCBuilderModule
+ com.nitv.newsapp.NewsApp_HiltComponents$ServiceC
+ com.nitv.newsapp.NewsApp_HiltComponents$ServiceC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$ServiceCBuilderModule
+ com.nitv.newsapp.NewsApp_HiltComponents$SingletonC
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewC
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewCBuilderModule
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewModelC
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewModelC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewModelCBuilderModule
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewWithFragmentC
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewWithFragmentC$Builder
+ com.nitv.newsapp.NewsApp_HiltComponents$ViewWithFragmentCBuilderModule
+com/nitv/newsapp/ui/main/MainViewModel_Factory.java
+ com.nitv.newsapp.ui.main.MainViewModel_Factory
+com/nitv/newsapp/databinding/ActivityMainBinding.java
+ com.nitv.newsapp.databinding.ActivityMainBinding
+hilt_aggregated_deps/_com_nitv_newsapp_di_RepositoryModule.java
+ hilt_aggregated_deps._com_nitv_newsapp_di_RepositoryModule
+com/nitv/newsapp/network/api/ApiHelperImpl_Factory.java
+ com.nitv.newsapp.network.api.ApiHelperImpl_Factory
+com/nitv/newsapp/data/local/NewsDao_Impl.java
+ com.nitv.newsapp.data.local.NewsDao_Impl
+ com.nitv.newsapp.data.local.NewsDao_Impl$1
+ com.nitv.newsapp.data.local.NewsDao_Impl$2
+ com.nitv.newsapp.data.local.NewsDao_Impl$3
+ com.nitv.newsapp.data.local.NewsDao_Impl$4
+ com.nitv.newsapp.data.local.NewsDao_Impl$5
+ com.nitv.newsapp.data.local.NewsDao_Impl$6
+ com.nitv.newsapp.data.local.NewsDao_Impl$7
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
