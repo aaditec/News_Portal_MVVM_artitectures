@@ -7,8 +7,12 @@ import com.nitv.newsapp.network.repository.NewsRepository;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
 
+@ScopeMetadata("javax.inject.Singleton")
+@QualifierMetadata
 @DaggerGenerated
 @SuppressWarnings({
     "unchecked",

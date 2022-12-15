@@ -6,16 +6,15 @@ import com.nitv.newsapp.data.model.NewsArticle
 
 @Dao
 interface NewsDao {
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun upsert(newsArticle: NewsArticle): Long
+    @Insert(onConflict = OnConflictStrategy.ABORT)
+    suspend fun upsert(newsArticle: NewsArticle)
 
     @Query("SELECT * FROM news_articles")
     fun getAllNews(): LiveData<List<NewsArticle>>
 
     @Delete
-    suspend fun deleteNews(newsArticle: NewsArticle)
+    fun deleteNews(newsArticle: NewsArticle)
 
     @Query("Delete FROM news_articles")
-    suspend fun deleteAllNews()
+    fun deleteAllNews()
 }

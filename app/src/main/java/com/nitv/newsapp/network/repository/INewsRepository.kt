@@ -10,11 +10,11 @@ interface INewsRepository {
 
     suspend fun searchNews(searchQuery: String, pageNumber: Int): NetworkState<NewsResponse>
 
-    suspend fun saveNews(news: NewsArticle): Long
+    suspend fun saveNews(news: NewsArticle)
 
     fun getSavedNews(): LiveData<List<NewsArticle>>
 
-    suspend fun deleteNews(news: NewsArticle)
+    fun deleteNews(news: NewsArticle)
 
-    suspend fun deleteAllNews()
+    fun deleteAllNews()
 }

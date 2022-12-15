@@ -2,28 +2,38 @@ package com.nitv.newsapp.ui.favorite
 
 import android.os.Bundle
 import android.view.View
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import com.nitv.newsapp.MyApplication
 import com.nitv.newsapp.R
 import com.nitv.newsapp.base.BaseFragment
 import com.nitv.newsapp.databinding.FragmentFavoritesBinding
+import com.nitv.newsapp.di.Factory.ViewModelFactory
 import com.nitv.newsapp.ui.adapter.NewsAdapter
 import com.nitv.newsapp.ui.main.MainActivity
 import com.nitv.newsapp.ui.main.MainViewModel
+import javax.inject.Inject
 
 class FavoriteFragment : BaseFragment<FragmentFavoritesBinding>() {
     override fun setBinding(): FragmentFavoritesBinding = FragmentFavoritesBinding.inflate(layoutInflater)
 
     lateinit var viewModel: MainViewModel
     lateinit var newsAdapter: NewsAdapter
+    @Inject
+    lateinit var viewModelFactory: ViewModelFactory
 
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        (requireActivity().application as MyApplication).getAppComponent().inject(this)
+        viewModel = ViewModelProviders.of(this,viewModelFactory).get(MainViewModel::class.java)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = (activity as MainActivity).mainViewModel
+
         setupRecyclerView()
         setupUI(view)
         setupObserver()

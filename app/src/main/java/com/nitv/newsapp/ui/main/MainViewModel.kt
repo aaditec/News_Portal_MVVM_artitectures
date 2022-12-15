@@ -1,18 +1,16 @@
 package com.nitv.newsapp.ui.main
 
+import android.app.Application
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nitv.newsapp.data.model.NewsArticle
 import com.nitv.newsapp.data.model.NewsResponse
-import com.nitv.newsapp.di.CoroutinesDispatcherProvider
 import com.nitv.newsapp.network.repository.INewsRepository
 import com.nitv.newsapp.state.NetworkState
 import com.nitv.newsapp.utils.Constants
-import com.nitv.newsapp.utils.NetworkHelper
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
-import kotlinx.coroutines.DEBUG_PROPERTY_VALUE_ON
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -20,14 +18,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
 
-@HiltViewModel
-class MainViewModel @Inject constructor(
-    private val repository: INewsRepository,
-    private val networkHelper: NetworkHelper,
-    private val coroutinesDispatcherProvider: CoroutinesDispatcherProvider
-) : ViewModel() {
-
-    private val TAG = "MainViewModel"
+class MainViewModel @Inject constructor(val repository: INewsRepository ) : ViewModel() {
     private val _errorMessage = MutableStateFlow("")
     val errorMessage: StateFlow<String>
         get() = _errorMessage
@@ -57,8 +48,8 @@ class MainViewModel @Inject constructor(
 
     fun fetchNews(countryCode: String) {
         if (feedNewsPage <= totalPage) {
-            if (networkHelper.isNetworkConnected()) {
-                viewModelScope.launch(coroutinesDispatcherProvider.io) {
+//            if (networkHelper.isNetworkConnected()) {
+                viewModelScope.launch(Dispatchers.IO) {
                     _newsResponse.value = NetworkState.Loading()
                     when (val response = repository.getNews(countryCode, feedNewsPage)) {
                         is NetworkState.Success -> {
@@ -74,9 +65,6 @@ class MainViewModel @Inject constructor(
                     }
 
                 }
-            } else {
-                _errorMessage.value = "No internet available"
-            }
         }
     }
 
@@ -102,8 +90,8 @@ class MainViewModel @Inject constructor(
     fun searchNews(query: String) {
         newQuery = query
         if (newQuery.isNotEmpty() && searchNewsPage <= totalPage) {
-            if (networkHelper.isNetworkConnected()) {
-                viewModelScope.launch(coroutinesDispatcherProvider.io) {
+//            if (networkHelper.isNetworkConnected()) {
+                viewModelScope.launch(Dispatchers.IO) {
                     _searchNewsResponse.value = NetworkState.Loading()
                     when (val response = repository.searchNews(query, searchNewsPage)) {
                         is NetworkState.Success -> {
@@ -118,9 +106,9 @@ class MainViewModel @Inject constructor(
                         else -> {}
                     }
                 }
-            } else {
-                _errorMessage.value = "No internet available"
-            }
+//            } else {
+//                _errorMessage.value = "No internet available"
+//            }
         }
     }
 
@@ -169,7 +157,7 @@ class MainViewModel @Inject constructor(
             }
         } catch (e: Exception) {
             e.message?.let {
-                Log.e(TAG, it)
+
             }
             convertedDate = strCurrentDate
         }
@@ -184,7 +172,7 @@ class MainViewModel @Inject constructor(
         val coroutineExceptionHandler = CoroutineExceptionHandler { _, exception ->
             onError(exception)
         }
-        viewModelScope.launch(coroutinesDispatcherProvider.io + coroutineExceptionHandler) {
+        viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
             repository.saveNews(news)
 
         }
@@ -196,7 +184,7 @@ class MainViewModel @Inject constructor(
         val coroutineExceptionHandler = CoroutineExceptionHandler { _, exception ->
             onError(exception)
         }
-        viewModelScope.launch(coroutinesDispatcherProvider.io + coroutineExceptionHandler) {
+        viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
             repository.deleteNews(news)
         }
     }

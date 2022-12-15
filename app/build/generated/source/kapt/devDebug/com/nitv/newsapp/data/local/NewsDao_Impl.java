@@ -8,7 +8,6 @@ import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomSQLiteQuery;
 import androidx.room.SharedSQLiteStatement;
-import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
 import com.nitv.newsapp.data.model.NewsArticle;
@@ -16,7 +15,6 @@ import com.nitv.newsapp.data.model.Source;
 import java.lang.Class;
 import java.lang.Exception;
 import java.lang.Integer;
-import java.lang.Long;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
@@ -45,7 +43,7 @@ public final class NewsDao_Impl implements NewsDao {
     this.__insertionAdapterOfNewsArticle = new EntityInsertionAdapter<NewsArticle>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `news_articles` (`id`,`author`,`content`,`description`,`publishedAt`,`source`,`title`,`url`,`urlToImage`) VALUES (?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `news_articles` (`id`,`author`,`content`,`description`,`publishedAt`,`source`,`title`,`url`,`urlToImage`) VALUES (?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -75,8 +73,7 @@ public final class NewsDao_Impl implements NewsDao {
         } else {
           stmt.bindString(5, value.getPublishedAt());
         }
-        final String _tmp;
-        _tmp = __converters.fromSource(value.getSource());
+        final String _tmp = __converters.fromSource(value.getSource());
         if (_tmp == null) {
           stmt.bindNull(6);
         } else {
@@ -125,31 +122,13 @@ public final class NewsDao_Impl implements NewsDao {
 
   @Override
   public Object upsert(final NewsArticle newsArticle,
-      final Continuation<? super Long> continuation) {
-    return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
-      @Override
-      public Long call() throws Exception {
-        __db.beginTransaction();
-        try {
-          long _result = __insertionAdapterOfNewsArticle.insertAndReturnId(newsArticle);
-          __db.setTransactionSuccessful();
-          return _result;
-        } finally {
-          __db.endTransaction();
-        }
-      }
-    }, continuation);
-  }
-
-  @Override
-  public Object deleteNews(final NewsArticle newsArticle,
       final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
-          __deletionAdapterOfNewsArticle.handle(newsArticle);
+          __insertionAdapterOfNewsArticle.insert(newsArticle);
           __db.setTransactionSuccessful();
           return Unit.INSTANCE;
         } finally {
@@ -160,22 +139,29 @@ public final class NewsDao_Impl implements NewsDao {
   }
 
   @Override
-  public Object deleteAllNews(final Continuation<? super Unit> continuation) {
-    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
-      @Override
-      public Unit call() throws Exception {
-        final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteAllNews.acquire();
-        __db.beginTransaction();
-        try {
-          _stmt.executeUpdateDelete();
-          __db.setTransactionSuccessful();
-          return Unit.INSTANCE;
-        } finally {
-          __db.endTransaction();
-          __preparedStmtOfDeleteAllNews.release(_stmt);
-        }
-      }
-    }, continuation);
+  public void deleteNews(final NewsArticle newsArticle) {
+    __db.assertNotSuspendingTransaction();
+    __db.beginTransaction();
+    try {
+      __deletionAdapterOfNewsArticle.handle(newsArticle);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void deleteAllNews() {
+    __db.assertNotSuspendingTransaction();
+    final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteAllNews.acquire();
+    __db.beginTransaction();
+    try {
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfDeleteAllNews.release(_stmt);
+    }
   }
 
   @Override
@@ -187,15 +173,15 @@ public final class NewsDao_Impl implements NewsDao {
       public List<NewsArticle> call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
-          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfAuthor = CursorUtil.getColumnIndexOrThrow(_cursor, "author");
-          final int _cursorIndexOfContent = CursorUtil.getColumnIndexOrThrow(_cursor, "content");
-          final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
-          final int _cursorIndexOfPublishedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "publishedAt");
-          final int _cursorIndexOfSource = CursorUtil.getColumnIndexOrThrow(_cursor, "source");
-          final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
-          final int _cursorIndexOfUrl = CursorUtil.getColumnIndexOrThrow(_cursor, "url");
-          final int _cursorIndexOfUrlToImage = CursorUtil.getColumnIndexOrThrow(_cursor, "urlToImage");
+          final int _cursorIndexOfId = 0;
+          final int _cursorIndexOfAuthor = 1;
+          final int _cursorIndexOfContent = 2;
+          final int _cursorIndexOfDescription = 3;
+          final int _cursorIndexOfPublishedAt = 4;
+          final int _cursorIndexOfSource = 5;
+          final int _cursorIndexOfTitle = 6;
+          final int _cursorIndexOfUrl = 7;
+          final int _cursorIndexOfUrlToImage = 8;
           final List<NewsArticle> _result = new ArrayList<NewsArticle>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final NewsArticle _item;
@@ -206,23 +192,55 @@ public final class NewsDao_Impl implements NewsDao {
               _tmpId = _cursor.getInt(_cursorIndexOfId);
             }
             final String _tmpAuthor;
-            _tmpAuthor = _cursor.getString(_cursorIndexOfAuthor);
+            if (_cursor.isNull(_cursorIndexOfAuthor)) {
+              _tmpAuthor = null;
+            } else {
+              _tmpAuthor = _cursor.getString(_cursorIndexOfAuthor);
+            }
             final String _tmpContent;
-            _tmpContent = _cursor.getString(_cursorIndexOfContent);
+            if (_cursor.isNull(_cursorIndexOfContent)) {
+              _tmpContent = null;
+            } else {
+              _tmpContent = _cursor.getString(_cursorIndexOfContent);
+            }
             final String _tmpDescription;
-            _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            if (_cursor.isNull(_cursorIndexOfDescription)) {
+              _tmpDescription = null;
+            } else {
+              _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            }
             final String _tmpPublishedAt;
-            _tmpPublishedAt = _cursor.getString(_cursorIndexOfPublishedAt);
+            if (_cursor.isNull(_cursorIndexOfPublishedAt)) {
+              _tmpPublishedAt = null;
+            } else {
+              _tmpPublishedAt = _cursor.getString(_cursorIndexOfPublishedAt);
+            }
             final Source _tmpSource;
             final String _tmp;
-            _tmp = _cursor.getString(_cursorIndexOfSource);
+            if (_cursor.isNull(_cursorIndexOfSource)) {
+              _tmp = null;
+            } else {
+              _tmp = _cursor.getString(_cursorIndexOfSource);
+            }
             _tmpSource = __converters.toSource(_tmp);
             final String _tmpTitle;
-            _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+            if (_cursor.isNull(_cursorIndexOfTitle)) {
+              _tmpTitle = null;
+            } else {
+              _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+            }
             final String _tmpUrl;
-            _tmpUrl = _cursor.getString(_cursorIndexOfUrl);
+            if (_cursor.isNull(_cursorIndexOfUrl)) {
+              _tmpUrl = null;
+            } else {
+              _tmpUrl = _cursor.getString(_cursorIndexOfUrl);
+            }
             final String _tmpUrlToImage;
-            _tmpUrlToImage = _cursor.getString(_cursorIndexOfUrlToImage);
+            if (_cursor.isNull(_cursorIndexOfUrlToImage)) {
+              _tmpUrlToImage = null;
+            } else {
+              _tmpUrlToImage = _cursor.getString(_cursorIndexOfUrlToImage);
+            }
             _item = new NewsArticle(_tmpId,_tmpAuthor,_tmpContent,_tmpDescription,_tmpPublishedAt,_tmpSource,_tmpTitle,_tmpUrl,_tmpUrlToImage);
             _result.add(_item);
           }

@@ -1,5 +1,6 @@
 package com.nitv.newsapp.base
 
+import android.app.Application
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +10,6 @@ import androidx.viewbinding.ViewBinding
 
 
 abstract class BaseFragment<T : ViewBinding> : Fragment() {
-
     private var _binding: T? = null
     protected val binding get() = _binding!!
 
@@ -19,7 +19,7 @@ abstract class BaseFragment<T : ViewBinding> : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = this.setBinding()
-        setHasOptionsMenu(true);
+        setHasOptionsMenu(true)
         return binding.root
     }
 
@@ -29,5 +29,7 @@ abstract class BaseFragment<T : ViewBinding> : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
 
 }

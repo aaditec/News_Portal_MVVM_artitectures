@@ -1,6 +1,5 @@
 package com.nitv.newsapp.di
 
-import android.util.Log
 import androidx.viewbinding.BuildConfig
 import com.google.gson.GsonBuilder
 import com.nitv.newsapp.network.api.ApiHelper
@@ -9,25 +8,17 @@ import com.nitv.newsapp.network.api.NewsApi
 import com.nitv.newsapp.utils.Constants
 import dagger.Module
 import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    private val TAG = "NewsApp"
-
     @Provides
-    @Singleton
     fun provideOkHttpClient() = if (BuildConfig.DEBUG) {
         val loggingInterceptor = HttpLoggingInterceptor { message ->
-            Log.d(TAG, message)
         }
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
         OkHttpClient.Builder()
@@ -39,7 +30,6 @@ object NetworkModule {
 
 
     @Provides
-    @Singleton
     fun provideRetrofit(
         okHttpClient: OkHttpClient
     ): Retrofit =
@@ -50,11 +40,8 @@ object NetworkModule {
             .build()
 
     @Provides
-    @Singleton
     fun provideNewsApi(retrofit: Retrofit): NewsApi = retrofit.create(NewsApi::class.java)
 
     @Provides
-    @Singleton
     fun provideApiHelper(apiHelper: ApiHelperImpl): ApiHelper = apiHelper
-
 }

@@ -6,9 +6,5 @@ class Constants {
         const val BASE_URL = "https://newsapi.org"
         const val QUERY_PER_PAGE = 10
         const val CountryCode = "in"
-
-
-
-
     }
 }

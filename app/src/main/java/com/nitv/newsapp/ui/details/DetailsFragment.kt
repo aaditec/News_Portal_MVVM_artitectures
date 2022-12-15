@@ -4,14 +4,18 @@ import android.os.Bundle
 import android.view.View
 import android.webkit.WebViewClient
 import androidx.core.view.isGone
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.snackbar.Snackbar
+import com.nitv.newsapp.MyApplication
 import com.nitv.newsapp.base.BaseFragment
 import com.nitv.newsapp.databinding.FragmentDetailsBinding
+import com.nitv.newsapp.di.Factory.ViewModelFactory
 import com.nitv.newsapp.ui.main.MainActivity
 import com.nitv.newsapp.ui.main.MainViewModel
+import javax.inject.Inject
 
-class DetailsFragment : BaseFragment<FragmentDetailsBinding>() {
+ class DetailsFragment : BaseFragment<FragmentDetailsBinding>() {
 
     override fun setBinding(): FragmentDetailsBinding =
         FragmentDetailsBinding.inflate(layoutInflater)
@@ -19,9 +23,17 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding>() {
     lateinit var viewModel: MainViewModel
     val args: DetailsFragmentArgs by navArgs()
 
+     @Inject
+     lateinit var viewModelFactory: ViewModelFactory
+
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         (requireActivity().application as MyApplication).getAppComponent().inject(this)
+         viewModel = ViewModelProviders.of(this,viewModelFactory).get(MainViewModel::class.java)
+     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = (activity as MainActivity).mainViewModel
+
         setupUI(view)
         setupObserver()
     }
@@ -42,8 +54,8 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding>() {
     }
 
     private fun setupObserver() {
-        viewModel.getFavoriteNews().observe(viewLifecycleOwner, { news ->
+        viewModel.getFavoriteNews().observe(viewLifecycleOwner) { news ->
             binding.fab.isGone = news.any { it.title == args.news.title }
-        })
+        }
     }
 }

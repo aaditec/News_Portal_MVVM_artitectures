@@ -7,9 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/News_App.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/News_App.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/News_App.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/News_App.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/News_App.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/News_App.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/News_Portal_MVVM.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/News_Portal_MVVM.buildSrc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/News_Portal_MVVM.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/News_Portal_MVVM.buildSrc.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/News_Portal_MVVM.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/News_Portal_MVVM.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/News_Portal_MVVM_artitectures.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/News_Portal_MVVM_artitectures.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/News_Portal_MVVM_artitectures.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/News_Portal_MVVM_artitectures.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/News_Portal_MVVM_artitectures.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/News_Portal_MVVM_artitectures.buildSrc.test.iml" />
     </modules>
   </component>
 </project>

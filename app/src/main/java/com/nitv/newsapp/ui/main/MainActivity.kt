@@ -1,33 +1,39 @@
 package com.nitv.newsapp.ui.main
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.nitv.newsapp.MyApplication
 import com.nitv.newsapp.R
 import com.nitv.newsapp.base.BaseActivity
 import com.nitv.newsapp.databinding.ActivityMainBinding
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
+
 class MainActivity : BaseActivity<ActivityMainBinding>() {
+    val viewModel: MainViewModel by viewModels()
 
-    val mainViewModel: MainViewModel by viewModels()
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        (application as MyApplication).getAppComponent().inject(this)
+    }
     override fun onViewReady(savedInstanceState: Bundle?) {
         super.onViewReady(savedInstanceState)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.title = "Today's News";
+
         if (savedInstanceState == null) {
             setupBottomNavigationBar()
         }
-
-
-
         savedInstanceState?.let {
-            mainViewModel.hideErrorToast()
+            viewModel.hideErrorToast()
         }
+
     }
 
     override fun setBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -45,4 +51,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         )
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
     }
+
+
 }

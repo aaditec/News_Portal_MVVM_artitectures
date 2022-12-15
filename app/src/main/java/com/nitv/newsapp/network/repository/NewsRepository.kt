@@ -8,8 +8,8 @@ import com.nitv.newsapp.state.NetworkState
 import javax.inject.Inject
 
 class NewsRepository @Inject constructor(
-    private val remoteDataSource: ApiHelper,
-    private val localDataSource: NewsDao
+    val remoteDataSource: ApiHelper,
+     val localDataSource: NewsDao
 ) : INewsRepository {
 
     override suspend fun getNews(
@@ -50,7 +50,7 @@ class NewsRepository @Inject constructor(
 
     override fun getSavedNews() = localDataSource.getAllNews()
 
-    override suspend fun deleteNews(news: NewsArticle) = localDataSource.deleteNews(news)
+    override fun deleteNews(news: NewsArticle) = localDataSource.deleteNews(news)
 
-    override suspend fun deleteAllNews() = localDataSource.deleteAllNews()
+    override fun deleteAllNews() = localDataSource.deleteAllNews()
 }

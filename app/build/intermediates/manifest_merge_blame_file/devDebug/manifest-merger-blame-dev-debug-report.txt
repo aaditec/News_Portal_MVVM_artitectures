@@ -6,78 +6,78 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="30" />
-9-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml
+8-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:5:5-79
-11-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:5:22-76
+11-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:6:5-67
-12-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:6:22-64
+12-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:6:22-64
 13
 14    <application
-14-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:8:5-27:19
-15        android:name="com.nitv.newsapp.NewsApp"
-15-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:9:9-48
+14-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:8:5-27:19
+15        android:name="com.nitv.newsapp.MyApplication"
+15-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:9:9-38
 16        android:allowBackup="true"
-16-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:10:9-35
+16-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.5.0-rc01] C:\Users\user\.gradle\caches\transforms-3\51da2a0f2e82103bbc0b23720648f516\transformed\core-1.5.0-rc01\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.5.0-rc01] C:\Users\user\.gradle\caches\transforms-3\f55e8d0bac334fc8bafc0bdc8e336142\transformed\core-1.5.0-rc01\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/app_icon"
-19-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:11:9-40
+19-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:11:9-40
 20        android:label="@string/app_name"
-20-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:12:9-41
+20-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:12:9-41
 21        android:networkSecurityConfig="@xml/network_security_config"
-21-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:13:9-69
+21-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:13:9-69
 22        android:roundIcon="@mipmap/app_icon"
-22-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:14:9-45
+22-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:14:9-45
 23        android:supportsRtl="true"
-23-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:15:9-35
+23-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:15:9-35
 24        android:testOnly="true"
 25        android:theme="@style/Theme.NewsApp" >
-25-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:16:9-45
+25-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:16:9-45
 26        <activity
-26-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:17:9-26:20
+26-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:17:9-26:20
 27            android:name="com.nitv.newsapp.ui.main.MainActivity"
-27-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:18:13-65
+27-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:18:13-65
 28            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-28-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:19:13-87
+28-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:19:13-87
 29            android:exported="true" >
-29-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:20:13-36
+29-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:20:13-36
 30            <intent-filter>
-30-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:21:13-25:29
+30-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:21:13-25:29
 31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:22:17-69
-31-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:22:25-66
+31-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:22:17-69
+31-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:22:25-66
 32
 33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:24:17-77
-33-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM\app\src\main\AndroidManifest.xml:24:27-74
+33-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:24:17-77
+33-->C:\Users\user\AndroidStudioProjects\News_Portal_MVVM_artitectures\app\src\main\AndroidManifest.xml:24:27-74
 34            </intent-filter>
 35        </activity>
 36
 37        <service
-37-->[androidx.room:room-runtime:2.3.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\a5516323301d5c824866a10b9fdcbf1e\transformed\room-runtime-2.3.0-alpha04\AndroidManifest.xml:25:9-28:40
+37-->[androidx.room:room-runtime:2.4.0] C:\Users\user\.gradle\caches\transforms-3\224fd884f1faf7b9aa7a88c30eea41c5\transformed\room-runtime-2.4.0\AndroidManifest.xml:25:9-28:40
 38            android:name="androidx.room.MultiInstanceInvalidationService"
-38-->[androidx.room:room-runtime:2.3.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\a5516323301d5c824866a10b9fdcbf1e\transformed\room-runtime-2.3.0-alpha04\AndroidManifest.xml:26:13-74
+38-->[androidx.room:room-runtime:2.4.0] C:\Users\user\.gradle\caches\transforms-3\224fd884f1faf7b9aa7a88c30eea41c5\transformed\room-runtime-2.4.0\AndroidManifest.xml:26:13-74
 39            android:directBootAware="true"
-39-->[androidx.room:room-runtime:2.3.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\a5516323301d5c824866a10b9fdcbf1e\transformed\room-runtime-2.3.0-alpha04\AndroidManifest.xml:27:13-43
+39-->[androidx.room:room-runtime:2.4.0] C:\Users\user\.gradle\caches\transforms-3\224fd884f1faf7b9aa7a88c30eea41c5\transformed\room-runtime-2.4.0\AndroidManifest.xml:27:13-43
 40            android:exported="false" />
-40-->[androidx.room:room-runtime:2.3.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\a5516323301d5c824866a10b9fdcbf1e\transformed\room-runtime-2.3.0-alpha04\AndroidManifest.xml:28:13-37
+40-->[androidx.room:room-runtime:2.4.0] C:\Users\user\.gradle\caches\transforms-3\224fd884f1faf7b9aa7a88c30eea41c5\transformed\room-runtime-2.4.0\AndroidManifest.xml:28:13-37
 41
 42        <provider
-42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\125e34aae76e23c7bf73945ae16303d7\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\54cb673f7c5ed06a5939345e83cba675\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 43            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\125e34aae76e23c7bf73945ae16303d7\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\54cb673f7c5ed06a5939345e83cba675\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
 44            android:authorities="com.nitv.newsapp.dev.debug.lifecycle-process"
-44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\125e34aae76e23c7bf73945ae16303d7\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\54cb673f7c5ed06a5939345e83cba675\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
 45            android:exported="false"
-45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\125e34aae76e23c7bf73945ae16303d7\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\54cb673f7c5ed06a5939345e83cba675\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
 46            android:multiprocess="true" />
-46-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\125e34aae76e23c7bf73945ae16303d7\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\user\.gradle\caches\transforms-3\54cb673f7c5ed06a5939345e83cba675\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
 47    </application>
 48
 49</manifest>

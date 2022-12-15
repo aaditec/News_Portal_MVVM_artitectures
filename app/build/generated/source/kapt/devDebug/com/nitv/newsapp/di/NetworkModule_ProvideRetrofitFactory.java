@@ -4,10 +4,14 @@ package com.nitv.newsapp.di;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 
+@ScopeMetadata
+@QualifierMetadata
 @DaggerGenerated
 @SuppressWarnings({
     "unchecked",

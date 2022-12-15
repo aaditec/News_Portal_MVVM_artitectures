@@ -1,21 +1,21 @@
 object Deps {
     object Versions {
-        const val compile_sdk = 30
+        const val compile_sdk = 31
         const val min_sdk = 21
-        const val target_sdk = 30
+        const val target_sdk = 31
         const val app_version_code = 1
         const val app_version_name = "1.0"
         const val gradle_plugin = "7.0.0"
+        const val kotlinVersion = "1.6.20"
         const val constraint_layout = "2.0.4"
         const val lifecycle = "2.2.0"
         const val junit = "4.12"
         const val material = "1.2.1"
-        const val kotlinVersion = "1.5.31"
         const val coroutinesVersion = "1.4.2"
         const val ktx_core = "1.3.2"
         const val ktx_activity = "1.1.0"
-        const val roomVersion = "2.3.0-alpha04"
-        const val hiltVersion = "2.38.1"
+        const val roomVersion = "2.4.0"
+        const val daggerVersion = "2.44.2"
         const val retrofit = "2.9.0"
         const val okhttp = "4.9.0"
         const val glide = "4.11.0"
@@ -72,6 +72,7 @@ object Deps {
         const val runtime = "androidx.room:room-runtime:${Versions.roomVersion}"
         const val compiler = "androidx.room:room-compiler:${Versions.roomVersion}"
         const val ktx = "androidx.room:room-ktx:${Versions.roomVersion}"
+
     }
 
     object Navigation {
@@ -83,15 +84,13 @@ object Deps {
             "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
     }
 
-    object Hilt {
-        const val viewmodel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltVersion}"
-        const val compiler = "androidx.hilt:hilt-compiler:${Versions.hiltVersion}"
-        const val android = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
-        const val android_compiler =
-            "com.google.dagger:hilt-android-compiler:${Versions.hiltVersion}"
-        const val gradlePlugin =
-            "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
+    object Dagger {
+        const val android = "com.google.dagger:dagger-android:${Versions.daggerVersion}"
+        const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.daggerVersion}"
+        const val processor = "com.google.dagger:dagger-android-processor:${Versions.daggerVersion}"
     }
+    
+    
 
     object Retrofit {
         const val main = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"

@@ -5,9 +5,13 @@ import com.nitv.newsapp.network.api.NewsApi;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
 import retrofit2.Retrofit;
 
+@ScopeMetadata
+@QualifierMetadata
 @DaggerGenerated
 @SuppressWarnings({
     "unchecked",

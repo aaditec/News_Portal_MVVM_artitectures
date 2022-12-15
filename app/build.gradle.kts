@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
-    id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs")
 }
 
@@ -72,6 +71,7 @@ android {
     packagingOptions {
         resources.excludes.add("META-INF/*")
         resources.excludes.add(".readme")
+        resources.excludes.add("META-INF/gradle/incremental.annotation.processors")
     }
 
     sourceSets {
@@ -104,6 +104,7 @@ dependencies {
     androidTestImplementation("junit:junit:4.12")
     kapt(Deps.Room.compiler)
 
+
     // Activity KTX
     implementation(Deps.AndroidX.ktx_activity)
 
@@ -125,9 +126,11 @@ dependencies {
     implementation(Deps.Coroutines.core)
     implementation(Deps.Coroutines.android)
 
-    //Dagger - Hilt
-    implementation(Deps.Hilt.android)
-    kapt(Deps.Hilt.android_compiler)
+    //Dagger
+    implementation(Deps.Dagger.android)
+    implementation(Deps.Dagger.daggerCompiler)
+    implementation(Deps.Dagger.processor)
+
 
     //Navigation
     implementation(Deps.Navigation.navigationFragment)

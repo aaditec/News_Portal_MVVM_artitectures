@@ -10,13 +10,16 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.nitv.newsapp.MyApplication
 import com.nitv.newsapp.R
 import com.nitv.newsapp.base.BaseFragment
 import com.nitv.newsapp.databinding.FragmentFeedBinding
+import com.nitv.newsapp.di.Factory.ViewModelFactory
 import com.nitv.newsapp.state.NetworkState
 import com.nitv.newsapp.ui.adapter.NewsAdapter
 import com.nitv.newsapp.ui.main.MainActivity
@@ -24,8 +27,9 @@ import com.nitv.newsapp.ui.main.MainViewModel
 import com.nitv.newsapp.utils.Constants
 import com.nitv.newsapp.utils.Constants.Companion.QUERY_PER_PAGE
 import com.nitv.newsapp.utils.EndlessRecyclerOnScrollListener
+import dagger.android.AndroidInjection
 import kotlinx.coroutines.flow.collect
-
+import javax.inject.Inject
 
 class FeedFragment : BaseFragment<FragmentFeedBinding>() {
 
@@ -33,18 +37,30 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
         FragmentFeedBinding.inflate(layoutInflater)
 
     private lateinit var onScrollListener: EndlessRecyclerOnScrollListener
+
     lateinit var mainViewModel: MainViewModel
+    @Inject
+    lateinit var viewModelFactory: ViewModelFactory
+
     private lateinit var newsAdapter: NewsAdapter
     val countryCode = Constants.CountryCode
     private lateinit var searchView: SearchView
 
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        (requireActivity().application as MyApplication).getAppComponent().inject(this)
+        mainViewModel = ViewModelProviders.of(this,viewModelFactory).get(MainViewModel::class.java)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mainViewModel = (activity as MainActivity).mainViewModel
+
+
         setupUI()
         setupRecyclerView()
         setupObservers()
         setHasOptionsMenu(true)
+
     }
 
     private fun setupUI() {
@@ -125,6 +141,7 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
                                 showErrorMessage(response.message)
                             }
                         }
+                        else -> {}
                     }
                 }
             } else {

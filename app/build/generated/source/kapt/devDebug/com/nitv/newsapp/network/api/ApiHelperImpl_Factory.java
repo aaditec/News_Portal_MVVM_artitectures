@@ -3,8 +3,12 @@ package com.nitv.newsapp.network.api;
 
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
 
+@ScopeMetadata
+@QualifierMetadata
 @DaggerGenerated
 @SuppressWarnings({
     "unchecked",
