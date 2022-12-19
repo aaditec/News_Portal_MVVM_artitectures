@@ -1,8 +1,6 @@
-package com.nitv.newsapp.di
+package com.nitv.newsapp.di.Module
 
-import android.content.Context
 import com.nitv.newsapp.data.local.NewsDao
-import com.nitv.newsapp.data.local.NewsDatabase
 import com.nitv.newsapp.network.api.ApiHelper
 import com.nitv.newsapp.network.repository.INewsRepository
 import com.nitv.newsapp.network.repository.NewsRepository
@@ -13,7 +11,6 @@ import javax.inject.Singleton
 
 @Module
 object RepositoryModule {
-
     @Singleton
     @Provides
     fun provideRepository(

@@ -1,8 +1,6 @@
 package com.nitv.newsapp.base
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
 import androidx.annotation.CallSuper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding

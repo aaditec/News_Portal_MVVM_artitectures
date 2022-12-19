@@ -22,6 +22,8 @@ object Deps {
         const val navigationVersion = "2.4.0-alpha02"
         const val appCompatVersion = "1.2.0"
         const val swipeRefreshVersion = "1.1.0"
+        const val Picasso = "2.71828"
+        const val rxjava = "2.1.1"
     }
 
     const val gradle_plugin = "com.android.tools.build:gradle:${Versions.gradle_plugin}"
@@ -84,6 +86,8 @@ object Deps {
             "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
     }
 
+
+
     object Dagger {
         const val android = "com.google.dagger:dagger-android:${Versions.daggerVersion}"
         const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.daggerVersion}"
@@ -106,6 +110,12 @@ object Deps {
     object Glide {
         const val runtime = "com.github.bumptech.glide:glide:${Versions.glide}"
         const val compiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+    }
+    object picasso{
+        const val picassoIMPL = "com.squareup.picasso:picasso:${Versions.Picasso}"
+    }
+    object RXAndroid{
+        const val rxjavaIMPL = "io.reactivex.rxjava2:rxandroid:${Versions.rxjava}"
     }
 
     const val SwipeRefreshLayout =

@@ -1,7 +1,5 @@
 package com.nitv.newsapp.ui.main
 
-import android.app.Application
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nitv.newsapp.data.model.NewsArticle
@@ -18,7 +16,10 @@ import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
 
-class MainViewModel @Inject constructor(val repository: INewsRepository ) : ViewModel() {
+
+class MainViewModel @Inject constructor(
+    private val repository: INewsRepository
+) : ViewModel() {
     private val _errorMessage = MutableStateFlow("")
     val errorMessage: StateFlow<String>
         get() = _errorMessage
@@ -48,7 +49,6 @@ class MainViewModel @Inject constructor(val repository: INewsRepository ) : View
 
     fun fetchNews(countryCode: String) {
         if (feedNewsPage <= totalPage) {
-//            if (networkHelper.isNetworkConnected()) {
                 viewModelScope.launch(Dispatchers.IO) {
                     _newsResponse.value = NetworkState.Loading()
                     when (val response = repository.getNews(countryCode, feedNewsPage)) {
@@ -79,6 +79,7 @@ class MainViewModel @Inject constructor(val repository: INewsRepository ) : View
                 val newArticles = resultResponse.articles
                 oldArticles?.addAll(newArticles)
             }
+            //Conversion
             feedResponse?.let {
                 convertPublishedDate(it)
             }
@@ -90,7 +91,6 @@ class MainViewModel @Inject constructor(val repository: INewsRepository ) : View
     fun searchNews(query: String) {
         newQuery = query
         if (newQuery.isNotEmpty() && searchNewsPage <= totalPage) {
-//            if (networkHelper.isNetworkConnected()) {
                 viewModelScope.launch(Dispatchers.IO) {
                     _searchNewsResponse.value = NetworkState.Loading()
                     when (val response = repository.searchNews(query, searchNewsPage)) {
@@ -103,12 +103,10 @@ class MainViewModel @Inject constructor(val repository: INewsRepository ) : View
                                     response.message ?: "Error"
                                 )
                         }
-                        else -> {}
+                        else -> {
+                        }
                     }
                 }
-//            } else {
-//                _errorMessage.value = "No internet available"
-//            }
         }
     }
 
@@ -157,7 +155,7 @@ class MainViewModel @Inject constructor(val repository: INewsRepository ) : View
             }
         } catch (e: Exception) {
             e.message?.let {
-
+                println("error")
             }
             convertedDate = strCurrentDate
         }
@@ -174,7 +172,6 @@ class MainViewModel @Inject constructor(val repository: INewsRepository ) : View
         }
         viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
             repository.saveNews(news)
-
         }
     }
 

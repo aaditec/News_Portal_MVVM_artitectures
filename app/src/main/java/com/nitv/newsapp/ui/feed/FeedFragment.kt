@@ -22,19 +22,16 @@ import com.nitv.newsapp.databinding.FragmentFeedBinding
 import com.nitv.newsapp.di.Factory.ViewModelFactory
 import com.nitv.newsapp.state.NetworkState
 import com.nitv.newsapp.ui.adapter.NewsAdapter
-import com.nitv.newsapp.ui.main.MainActivity
 import com.nitv.newsapp.ui.main.MainViewModel
 import com.nitv.newsapp.utils.Constants
-import com.nitv.newsapp.utils.Constants.Companion.QUERY_PER_PAGE
 import com.nitv.newsapp.utils.EndlessRecyclerOnScrollListener
-import dagger.android.AndroidInjection
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 
 class FeedFragment : BaseFragment<FragmentFeedBinding>() {
-
     override fun setBinding(): FragmentFeedBinding =
         FragmentFeedBinding.inflate(layoutInflater)
+
 
     private lateinit var onScrollListener: EndlessRecyclerOnScrollListener
 
@@ -44,13 +41,16 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
 
     private lateinit var newsAdapter: NewsAdapter
     val countryCode = Constants.CountryCode
-    private lateinit var searchView: SearchView
+     lateinit var searchView: SearchView
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (requireActivity().application as MyApplication).getAppComponent().inject(this)
         mainViewModel = ViewModelProviders.of(this,viewModelFactory).get(MainViewModel::class.java)
+
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -75,7 +75,7 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
         }
 
         // scroll listener for recycler view
-        onScrollListener = object : EndlessRecyclerOnScrollListener(QUERY_PER_PAGE) {
+        onScrollListener = object : EndlessRecyclerOnScrollListener() {
             override fun onLoadMore() {
                 if (mainViewModel.searchEnable) {
                     mainViewModel.searchNews(mainViewModel.newQuery)
@@ -124,7 +124,7 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
 
                                 newsAdapter.differ.submitList(newResponse.articles.toList())
                                 mainViewModel.totalPage =
-                                    newResponse.totalResults / QUERY_PER_PAGE + 1
+                                    newResponse.totalResults
                                 onScrollListener.isLastPage =
                                     mainViewModel.feedNewsPage == mainViewModel.totalPage + 1
                                 hideBottomPadding()
@@ -171,7 +171,7 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
                             response.data?.let { searchResponse ->
                                 newsAdapter.differ.submitList(searchResponse.articles.toList())
                                 mainViewModel.totalPage =
-                                    searchResponse.totalResults / QUERY_PER_PAGE + 1
+                                    searchResponse.totalResults
                                 onScrollListener.isLastPage =
                                     mainViewModel.searchNewsPage == mainViewModel.totalPage + 1
                                 hideBottomPadding()

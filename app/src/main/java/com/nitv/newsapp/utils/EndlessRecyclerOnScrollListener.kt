@@ -5,10 +5,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.nitv.newsapp.utils.Constants.Companion.QUERY_PER_PAGE
 
 abstract class EndlessRecyclerOnScrollListener(
-    private val threshHold: Int = QUERY_PER_PAGE
 ) : RecyclerView.OnScrollListener() {
 
     var isError = false
@@ -60,11 +58,10 @@ abstract class EndlessRecyclerOnScrollListener(
         val isNotLoadingAndIsNotLastPage = !isLoading && !isLastPage
         val isAtLastItem = (firstVisibleItem + visibleItemCount) >= totalItemCount
         val isNotAtBeginning = firstVisibleItem > 0
-        val isTotalMoreThanVisible = totalItemCount >= threshHold
 
         val shouldPaginate =
             isNoError && isNotLoadingAndIsNotLastPage && isAtLastItem && isNotAtBeginning
-                    && isTotalMoreThanVisible && isScrolling
+                     && isScrolling
 
         if (shouldPaginate) {
             isScrolling = false;

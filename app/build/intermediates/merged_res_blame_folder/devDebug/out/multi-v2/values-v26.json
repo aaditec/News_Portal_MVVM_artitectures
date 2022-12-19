@@ -4,6 +4,17 @@
             "outputFile": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM_artitectures\\app\\build\\intermediates\\incremental\\mergeDevDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\e24e820338ab510d00ff89e8f560a60a\\transformed\\appcompat-1.2.0\\res\\values-v26\\values-v26.xml",
+                    "from": {
+                        "startLines": "2,3,4,8,12,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,431,657,896",
+                        "endLines": "2,3,7,11,15,16",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,426,652,891,984"
+                    }
+                },
+                {
                     "source": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM_artitectures\\app\\src\\main\\res\\values-v26\\themes.xml",
                     "from": {
                         "startLines": "4",
@@ -20,17 +31,6 @@
                         "endLines": "23",
                         "endColumns": "12",
                         "endOffsets": "1385"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\fae8d8473114e0c6e80de416babcf6d1\\transformed\\appcompat-1.2.0\\res\\values-v26\\values-v26.xml",
-                    "from": {
-                        "startLines": "2,3,4,8,12,16",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,130,217,431,657,896",
-                        "endLines": "2,3,7,11,15,16",
-                        "endColumns": "74,86,12,12,12,92",
-                        "endOffsets": "125,212,426,652,891,984"
                     }
                 }
             ]

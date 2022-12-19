@@ -1,1 +1,1 @@
-[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.nitv.newsapp.ui.feed.FeedFragmentDirections","com.nitv.newsapp.ui.favorite.FavoriteFragmentDirections","com.nitv.newsapp.ui.details.DetailsFragmentArgs"]}]
+[{"navFile":"src\\main\\res\\navigation\\main_nav_graph.xml","javaFiles":[]},{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.nitv.newsapp.ui.feed.FeedFragmentDirections","com.nitv.newsapp.ui.favorite.FavoriteFragmentDirections","com.nitv.newsapp.ui.details.DetailsFragmentArgs"]}]

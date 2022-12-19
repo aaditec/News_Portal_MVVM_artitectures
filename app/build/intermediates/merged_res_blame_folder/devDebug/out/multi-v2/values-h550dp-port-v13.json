@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM_artitectures\\app\\build\\intermediates\\incremental\\mergeDevDebugResources\\merged.dir\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\29ff30fda251d70805e885928196961d\\transformed\\material-1.4.0-beta01\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\54c98c12cee9feec96eb8932793642d3\\transformed\\material-1.4.0-beta01\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

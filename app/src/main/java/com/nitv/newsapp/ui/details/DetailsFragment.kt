@@ -11,7 +11,6 @@ import com.nitv.newsapp.MyApplication
 import com.nitv.newsapp.base.BaseFragment
 import com.nitv.newsapp.databinding.FragmentDetailsBinding
 import com.nitv.newsapp.di.Factory.ViewModelFactory
-import com.nitv.newsapp.ui.main.MainActivity
 import com.nitv.newsapp.ui.main.MainViewModel
 import javax.inject.Inject
 
@@ -21,15 +20,22 @@ import javax.inject.Inject
         FragmentDetailsBinding.inflate(layoutInflater)
 
     lateinit var viewModel: MainViewModel
+
+
+
     val args: DetailsFragmentArgs by navArgs()
 
      @Inject
      lateinit var viewModelFactory: ViewModelFactory
 
+
+
+
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
          (requireActivity().application as MyApplication).getAppComponent().inject(this)
          viewModel = ViewModelProviders.of(this,viewModelFactory).get(MainViewModel::class.java)
+
      }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -40,6 +40,10 @@
             android:exported="false" />
 
         <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.nitv.newsapp.dev.debug.com.squareup.picasso"
+            android:exported="false" />
+        <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
             android:authorities="com.nitv.newsapp.dev.debug.lifecycle-process"
             android:exported="false"

@@ -143,5 +143,8 @@ dependencies {
     //Swipe Refresh Layout
     implementation(Deps.SwipeRefreshLayout)
 
+    //picasso and rxjava
+    implementation(Deps.picasso.picassoIMPL)
+    implementation(Deps.RXAndroid.rxjavaIMPL)
 
 }

@@ -1,9 +1,9 @@
 package com.nitv.newsapp
-
 import android.app.Application
+import com.nitv.newsapp.di.Module.AppModule
 import com.nitv.newsapp.di.component.AppComponent
-import com.nitv.newsapp.di.component.AppModule
 import com.nitv.newsapp.di.component.DaggerAppComponent
+
 
 class MyApplication : Application(){
     lateinit var activityComponent: AppComponent

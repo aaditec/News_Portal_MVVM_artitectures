@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\user\\AndroidStudioProjects\\News_Portal_MVVM_artitectures\\app\\build\\intermediates\\incremental\\mergeDevDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\29ff30fda251d70805e885928196961d\\transformed\\material-1.4.0-beta01\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\54c98c12cee9feec96eb8932793642d3\\transformed\\material-1.4.0-beta01\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\fae8d8473114e0c6e80de416babcf6d1\\transformed\\appcompat-1.2.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\e24e820338ab510d00ff89e8f560a60a\\transformed\\appcompat-1.2.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

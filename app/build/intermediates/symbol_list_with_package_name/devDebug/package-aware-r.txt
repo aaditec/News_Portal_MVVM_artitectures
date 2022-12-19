@@ -2008,6 +2008,7 @@ id linear
 id listMode
 id list_item
 id main_container
+id main_nav_graph
 id masked
 id material_clock_display
 id material_clock_face
@@ -2400,11 +2401,11 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu menu
 menu toolbar_menu
 mipmap app_icon
 mipmap app_icon_adaptive_back
 mipmap app_icon_adaptive_fore
+navigation main_nav_graph
 navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

@@ -1,15 +1,13 @@
-com/nitv/newsapp/di/NetworkModule_ProvideApiHelperFactory.java
- com.nitv.newsapp.di.NetworkModule_ProvideApiHelperFactory
 com/nitv/newsapp/DataBindingTriggerClass.java
  com.nitv.newsapp.DataBindingTriggerClass
+com/nitv/newsapp/di/Module/RepositoryModule_ProvideRepositoryFactory.java
+ com.nitv.newsapp.di.Module.RepositoryModule_ProvideRepositoryFactory
 com/nitv/newsapp/ui/details/DetailsFragmentArgs.java
  com.nitv.newsapp.ui.details.DetailsFragmentArgs
  com.nitv.newsapp.ui.details.DetailsFragmentArgs$1
  com.nitv.newsapp.ui.details.DetailsFragmentArgs$Builder
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
-com/nitv/newsapp/di/RepositoryModule_ProvideINewsRepositoryFactory.java
- com.nitv.newsapp.di.RepositoryModule_ProvideINewsRepositoryFactory
 com/nitv/newsapp/databinding/ItemNewsBinding.java
  com.nitv.newsapp.databinding.ItemNewsBinding
 androidx/databinding/library/baseAdapters/BR.java
@@ -23,16 +21,16 @@ com/nitv/newsapp/DataBinderMapperImpl.java
  com.nitv.newsapp.DataBinderMapperImpl
  com.nitv.newsapp.DataBinderMapperImpl$InnerBrLookup
  com.nitv.newsapp.DataBinderMapperImpl$InnerLayoutIdLookup
-com/nitv/newsapp/di/RepositoryModule_ProvideRepositoryFactory.java
- com.nitv.newsapp.di.RepositoryModule_ProvideRepositoryFactory
+com/nitv/newsapp/di/Module/AppModule_ProvideNewsDaoFactory.java
+ com.nitv.newsapp.di.Module.AppModule_ProvideNewsDaoFactory
 com/nitv/newsapp/BR.java
  com.nitv.newsapp.BR
 com/nitv/newsapp/ui/feed/FeedFragment_MembersInjector.java
  com.nitv.newsapp.ui.feed.FeedFragment_MembersInjector
 com/nitv/newsapp/network/repository/NewsRepository_Factory.java
  com.nitv.newsapp.network.repository.NewsRepository_Factory
-com/nitv/newsapp/di/NetworkModule_ProvideNewsApiFactory.java
- com.nitv.newsapp.di.NetworkModule_ProvideNewsApiFactory
+com/nitv/newsapp/di/Module/ViewModelFactoryModule_ViewModelFactoryFactory.java
+ com.nitv.newsapp.di.Module.ViewModelFactoryModule_ViewModelFactoryFactory
 com/nitv/newsapp/ui/details/DetailsFragment_MembersInjector.java
  com.nitv.newsapp.ui.details.DetailsFragment_MembersInjector
 com/nitv/newsapp/ui/favorite/FavoriteFragmentDirections.java
@@ -44,37 +42,35 @@ com/nitv/newsapp/data/local/NewsDatabase_Impl.java
  com.nitv.newsapp.data.local.NewsDatabase_Impl$1
 com/nitv/newsapp/ui/favorite/FavoriteFragment_MembersInjector.java
  com.nitv.newsapp.ui.favorite.FavoriteFragment_MembersInjector
-com/nitv/newsapp/di/NetworkModule_ProvideRetrofitFactory.java
- com.nitv.newsapp.di.NetworkModule_ProvideRetrofitFactory
-com/nitv/newsapp/di/NetworkModule_ProvideOkHttpClientFactory.java
- com.nitv.newsapp.di.NetworkModule_ProvideOkHttpClientFactory
- com.nitv.newsapp.di.NetworkModule_ProvideOkHttpClientFactory$InstanceHolder
 com/nitv/newsapp/ui/feed/FeedFragmentDirections.java
  com.nitv.newsapp.ui.feed.FeedFragmentDirections
  com.nitv.newsapp.ui.feed.FeedFragmentDirections$1
  com.nitv.newsapp.ui.feed.FeedFragmentDirections$ActionFeedFragmentToDetailsFragment
 com/nitv/newsapp/databinding/FragmentDetailsBinding.java
  com.nitv.newsapp.databinding.FragmentDetailsBinding
-com/nitv/newsapp/di/component/AppModule_ProvideNewsDaoFactory.java
- com.nitv.newsapp.di.component.AppModule_ProvideNewsDaoFactory
 com/nitv/newsapp/BuildConfig.java
  com.nitv.newsapp.BuildConfig
 com/nitv/newsapp/databinding/FragmentFavoritesBinding.java
  com.nitv.newsapp.databinding.FragmentFavoritesBinding
+com/nitv/newsapp/di/Module/NetworkModule_ProvideApiHelperFactory.java
+ com.nitv.newsapp.di.Module.NetworkModule_ProvideApiHelperFactory
 com/nitv/newsapp/databinding/ItemErrorMessageBinding.java
  com.nitv.newsapp.databinding.ItemErrorMessageBinding
 com/nitv/newsapp/ui/main/MainViewModel_Factory.java
  com.nitv.newsapp.ui.main.MainViewModel_Factory
-com/nitv/newsapp/di/component/AppModule_ProvideDatabaseFactory.java
- com.nitv.newsapp.di.component.AppModule_ProvideDatabaseFactory
+com/nitv/newsapp/di/Module/NetworkModule_ProvideNewsApiFactory.java
+ com.nitv.newsapp.di.Module.NetworkModule_ProvideNewsApiFactory
+com/nitv/newsapp/di/Module/NetworkModule_ProvideOkHttpClientFactory.java
+ com.nitv.newsapp.di.Module.NetworkModule_ProvideOkHttpClientFactory
+ com.nitv.newsapp.di.Module.NetworkModule_ProvideOkHttpClientFactory$InstanceHolder
 com/nitv/newsapp/databinding/ActivityMainBinding.java
  com.nitv.newsapp.databinding.ActivityMainBinding
+com/nitv/newsapp/di/Module/RepositoryModule_ProvideINewsRepositoryFactory.java
+ com.nitv.newsapp.di.Module.RepositoryModule_ProvideINewsRepositoryFactory
 com/nitv/newsapp/di/Factory/ViewModelFactory_Factory.java
  com.nitv.newsapp.di.Factory.ViewModelFactory_Factory
 com/nitv/newsapp/network/api/ApiHelperImpl_Factory.java
  com.nitv.newsapp.network.api.ApiHelperImpl_Factory
-com/nitv/newsapp/di/Factory/ViewModelFactoryModule_ViewModelFactoryFactory.java
- com.nitv.newsapp.di.Factory.ViewModelFactoryModule_ViewModelFactoryFactory
 com/nitv/newsapp/data/local/NewsDao_Impl.java
  com.nitv.newsapp.data.local.NewsDao_Impl
  com.nitv.newsapp.data.local.NewsDao_Impl$1
@@ -82,7 +78,11 @@ com/nitv/newsapp/data/local/NewsDao_Impl.java
  com.nitv.newsapp.data.local.NewsDao_Impl$3
  com.nitv.newsapp.data.local.NewsDao_Impl$4
  com.nitv.newsapp.data.local.NewsDao_Impl$5
+com/nitv/newsapp/di/Module/AppModule_ProvideDatabaseFactory.java
+ com.nitv.newsapp.di.Module.AppModule_ProvideDatabaseFactory
 androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
 com/nitv/newsapp/databinding/FragmentFeedBinding.java
  com.nitv.newsapp.databinding.FragmentFeedBinding
+com/nitv/newsapp/di/Module/NetworkModule_ProvideRetrofitFactory.java
+ com.nitv.newsapp.di.Module.NetworkModule_ProvideRetrofitFactory
